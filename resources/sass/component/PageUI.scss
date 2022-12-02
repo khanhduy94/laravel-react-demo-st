@@ -1,0 +1,32 @@
+.border-header {
+   border: 3px solid #4cc4f0;
+}
+.page-container {
+   display: grid;
+   grid-template-rows: auto;
+   grid-template-columns: 100px auto 100px 100px;
+   grid-template-areas:
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+   .child {
+      padding: 5px;
+      margin: 5px;
+   }
+
+   .child-header {
+      grid-area: header;
+   }
+
+   .child-main {
+      grid-area: main;
+   }
+
+   .child-sidebar {
+      grid-area: sidebar;
+   }
+
+   .child-footer {
+      grid-area: footer;
+   }
+}
